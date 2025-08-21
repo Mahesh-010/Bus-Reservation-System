@@ -1,27 +1,65 @@
-# Bus-Reservation-System
 
-The Bus Reservation System is an innovative software solution designed
-to streamline and modernize the bus ticket booking process. Featuring a
-user-friendly console interface, this project integrates essential elements
-of data structures and file handling to create a robust and efficient
-system. Passengers can effortlessly access route details, reserve seats,
-and manage bookings, while administrators benefit from tools for
-effective bus information management. Leveraging linked lists ensures
-dynamic data management, offering real-time updates and organized
-storage of user accounts and booking records. The project emphasizes
-a delicate balance between simplicity and functionality, making it a
-valuable asset for the optimization of modern transportation services.
-This mini project's abstract further underscores its key features,
-including a visually intuitive seat display with color-coded distinctions
-between booked and available seats. Such a visual representation
-enhances user decision-making, contributing to an overall seamless
-experience. The implementation of a secure user authentication
-mechanism ensures data privacy and security, allowing only registered
-users to access reservation functionalities. Additionally, the project
-showcases the strategic incorporation of file handling techniques for
-persistent data storage and retrieval, providing users with a seamless
-experience even after restarting the application. In essence, the Bus
-Reservation System serves as a practical and educational tool,
-illustrating core software development principles and offering valuable
-insights for future endeavors in the broader domain of transportation
-services and beyond.
+# 🚌 Bus Reservation System (C Language)
+
+A simple terminal-based bus reservation system written in C.
+
+This project allows users to:
+
+- 🔐 Register and log in
+- 🪑 View available seats (1 bus with fixed seats)
+- 🧾 Book a seat and enter passenger details
+- ❌ Cancel a booking
+- 📄 View all bookings
+
+---
+
+## 🚀 How to Run
+
+### 🐧 On Linux/macOS:
+```bash
+gcc bus_reservation.c -o bus_reservation
+./bus_reservation
+````
+
+### 🪟 On Windows (using MinGW or GCC):
+
+```bash
+gcc bus_reservation.c -o bus_reservation.exe
+bus_reservation.exe
+```
+
+> 💡 Make sure required `.txt` files (like `users.txt`, `bookings.txt`, `seatList.txt`) are in the same folder as the executable.
+
+---
+
+## 📁 Files Used
+
+* `bus_reservation.c` – Main program file
+* `users.txt` – Stores registered user credentials
+* `bookings.txt` – Stores seat booking info
+* `seatList.txt` – Tracks seat availability
+
+---
+
+## 🧠 Concepts Used
+
+* Arrays for seat tracking
+* Linked lists for managing user and booking data
+* File I/O for persistent storage
+* Basic authentication (username/password)
+
+---
+
+## ⚠️ Limitations
+
+* Only one bus is supported
+* No encryption for passwords
+* No graphical interface
+
+---
+
+## 👥 Team
+
+This project was developed by a group of 4 students as part of an academic assignment.
+
+---
